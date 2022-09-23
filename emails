@@ -1,0 +1,4 @@
+#!/usr/bin/bash
+
+firefox 'mail.google.com/mail/u/0/#inbox' 'outlook.com' 'outlook.office.com/mail/inbox' &
+disown &

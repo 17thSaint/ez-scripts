@@ -1,0 +1,25 @@
+#!/usr/bin/bash
+
+for file in ~/Pictures/*.png
+	do
+		IFS=' '
+		read -r s1 s2 s3 s4 <<< "$file"
+		IFS="/"
+		read -r var1 var2 var3 var4 var5 <<< "$s1"
+		if [ "$var5" = "Screenshot" ]
+		then
+			echo "${s3} ${s4}"
+			read response
+			if [ "$response" = "y" ]
+			then
+				echo "Removing File: $file"
+				rm "$file"
+			fi
+			if [ "$response" = "n" ]
+			then
+				echo "Keep File"
+			fi
+		fi
+done
+
+

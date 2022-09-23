@@ -1,0 +1,5 @@
+#!/usr/bin/bash
+
+firefox 'mail.google.com/mail/u/0/#inbox' 'outlook.office.com/mail/inbox' 'uu.blackboard.com/webapps/portal/execute/tabs/tabAction?tab_tab_group_id=_29_1' &
+teams-for-linux &
+disown &
